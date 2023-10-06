@@ -7,11 +7,15 @@ const Counter = () => {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
 
+  const incrementHandler = () => {
+    dispatch(increment());
+  }
+
   return (
     <div>
       <div className='flex justify-center mt-10 '>
         <button
-          onClick={() => dispatch(increment())}
+          onClick={() =>incrementHandler() }
         >
           Increment 
         </button>

@@ -12,7 +12,6 @@ const counterSlice = createSlice({
       state.value += 1
     },
     decrement: (state) => {
-        alert('hello')
       state.value -= 1
     }
   },
